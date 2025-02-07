@@ -1,0 +1,16 @@
+services:
+  mongodb:
+    image: mongo:6.0.20
+    container_name: mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=textflow
+      - MONGO_INITDB_ROOT_PASSWORD=textflowPassword
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - "27017:27017"
+    restart: on-failure
+
+volumes:
+  mongodb_data:
+    driver: local
