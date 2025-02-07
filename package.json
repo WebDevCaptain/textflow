@@ -1,0 +1,21 @@
+{
+  "name": "textflow",
+  "version": "0.0.1",
+  "description": "A collaborative text-editor proof of concept.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "textflow",
+    "collaborative-editing"
+  ],
+  "author": "Shreyash (WebDevCaptain)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.13.0",
+    "socket.io": "^4.8.1",
+    "yjs": "^13.6.23"
+  }
+}
