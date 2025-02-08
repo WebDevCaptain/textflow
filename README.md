@@ -6,7 +6,7 @@ A collaborative text-editor proof of concept.
 
 ## Technologies used
 
-- Express.js + Socket.io
+- Express.js + Websockets (`ws`)
 - MongoDB
 - Docker
 - Yjs
@@ -23,9 +23,23 @@ npm install
 
 ## Usage
 
+1. Build the UI with
+
 ```bash
-npm start
+npm run build:ui
 ```
+
+2. Run the server with
+
+```bash
+npm run start:server
+```
+
+3. Open `http://localhost:3000` in your browser
+
+
+![Demo](image.png)
+
 
 ---
 
