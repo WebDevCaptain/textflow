@@ -4,7 +4,9 @@
   "description": "A collaborative text-editor proof of concept.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start:server": "node index.js",
+    "start:ui": "vite",
+    "build:ui": "vite build"
   },
   "keywords": [
     "textflow",
@@ -14,8 +16,16 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.21.2",
+    "monaco-editor": "^0.52.2",
     "mongodb": "^6.13.0",
     "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "ws": "^8.18.0",
+    "y-monaco": "^0.1.6",
+    "y-websocket": "^2.1.0",
     "yjs": "^13.6.23"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
   }
 }
