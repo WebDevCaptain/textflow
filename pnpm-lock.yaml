@@ -24,8 +24,8 @@ importers:
         specifier: ^4.8.1
         version: 4.8.1
       ws:
-        specifier: ^8.18.0
-        version: 8.18.0
+        specifier: ^8.20.1
+        version: 8.20.1
       y-monaco:
         specifier: ^0.1.6
         version: 0.1.6(monaco-editor@0.52.2)(yjs@13.6.23)
@@ -342,6 +342,7 @@ packages:
   bson@6.10.2:
     resolution: {integrity: sha512-5afhLTjqDSA3akH56E+/2J6kTDuSIlBxyXPdQslj9hcIgOUE378xdOfZvC/9q3LifJNI6KR/juZ+d0NRNYBwXg==}
     engines: {node: '>=16.20.1'}
+    deprecated: a critical bug affecting only useBigInt64=true deserialization usage is fixed in bson@6.10.3
 
   buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
@@ -879,8 +880,8 @@ packages:
     resolution: {integrity: sha512-jlf/foYIKywAt3x/XWKZ/3rz8OSJPiWktjmk891alJUEjiVxKX9LEO92qH3hv4aJ0mN3MWPvGMCy8jQi95xK4w==}
     engines: {node: '>=18'}
 
-  ws@6.2.3:
-    resolution: {integrity: sha512-jmTjYU0j60B+vHey6TfR3Z7RD61z/hmxBS3VMSGIrroOWXQEneK1zNuotOUrGyBHQj0yrpsLHPWtigEFd13ndA==}
+  ws@6.2.4:
+    resolution: {integrity: sha512-PNIUUyLI5YpkJZj60YBzX1o0ByQ4ovvfmq9N/Kig/PAYbVlGyz4R6G0SEWrD0O9acc0sT2+IdMBVLFv8FSi0Nw==}
     peerDependencies:
       bufferutil: ^4.0.1
       utf-8-validate: ^5.0.2
@@ -902,8 +903,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  ws@8.18.0:
-    resolution: {integrity: sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==}
+  ws@8.20.1:
+    resolution: {integrity: sha512-It4dO0K5v//JtTXuPkfEOaI3uUN87iYPnqo/ZzqCoG3g8uhA66QUMs/SrM0YK7/NAu+r4LMh/9dq2A7k+rHs+w==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -1758,14 +1759,14 @@ snapshots:
       tr46: 5.0.0
       webidl-conversions: 7.0.0
 
-  ws@6.2.3:
+  ws@6.2.4:
     dependencies:
       async-limiter: 1.0.1
     optional: true
 
   ws@8.17.1: {}
 
-  ws@8.18.0: {}
+  ws@8.20.1: {}
 
   xmlhttprequest-ssl@2.1.2: {}
 
@@ -1797,7 +1798,7 @@ snapshots:
       y-protocols: 1.0.6(yjs@13.6.23)
       yjs: 13.6.23
     optionalDependencies:
-      ws: 6.2.3
+      ws: 6.2.4
       y-leveldb: 0.1.2(yjs@13.6.23)
     transitivePeerDependencies:
       - bufferutil
